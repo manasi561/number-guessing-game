@@ -34,9 +34,12 @@ print(f"Guess the num between {lower_bound} and {upper_bound}. You have {guess_r
 
 
 while True:
-    user_guess = int(input("Enter your guess: "))
-    guess_counter += 1
-    guess_remaining = guess_remaining-1
+    user_guess = int(input("Enter your guess: ")) #Ask user to guess the number
+    guess_counter += 1   #Increase guess counter
+    guess_remaining = guess_remaining-1  #Decrease number of guesses remaining
+    
+    
+    #Display relevant messages if the user guess is low, high or the correct
     
     if lower_bound <= user_guess <= upper_bound:
         if user_guess == correct_number:
